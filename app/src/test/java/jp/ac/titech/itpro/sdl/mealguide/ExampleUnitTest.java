@@ -1,4 +1,4 @@
-package jp.ac.titech.itpro.sdl.simplemap;
+package jp.ac.titech.itpro.sdl.mealguide;
 
 import org.junit.Test;
 
