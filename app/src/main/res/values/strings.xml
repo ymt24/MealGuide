@@ -1,4 +1,13 @@
 <resources>
-    <string name="app_name">SimpleMap</string>
-    <string name="my_location">Ookayama Campus Room W371</string>
+    <string name="app_name">MealGuide</string>
+    <string name="menu_element1">ヘルプ</string>
+    <string name="menu_element2">終了</string>
+    <string name="toast_requires_permission">This application requires permission %s</string>
+    <string name="china">中華</string>
+    <string name="ramen">ラーメン</string>
+    <string name="curry">カレー</string>
+    <string name="set">定食</string>
+    <string name="italy">イタリアン</string>
+    <string name="fashion">おしゃれ</string>
+    <string name="any">なんでもいい</string>
 </resources>

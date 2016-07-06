@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:actionBarSize"
+        android:background="?android:colorPrimary"></Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="現在時刻"
+                android:textSize="60sp"/>
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:timeZone="Asia/Tokyo"
+                android:format24Hour="yyyy/MM/dd"
+                android:format12Hour="yyyy/MM/dd"
+                />
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:format24Hour="HH:mm:ss"
+                android:format12Hour="hh:mm:ss"
+                android:timeZone="Asia/Tokyo"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:text="マップへ移行"
+            android:textSize="40sp"
+            android:id="@+id/mapbutton"
+            android:layout_gravity="right|top"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="460dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical">
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/china"
+                android:id="@+id/switch1"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|bottom" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ramen"
+                android:id="@+id/switch2"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curry"
+                android:id="@+id/switch3"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set"
+                android:id="@+id/switch4"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/italy"
+                android:id="@+id/switch5"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fashion"
+                android:id="@+id/switch6"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/any"
+                android:id="@+id/switch7"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="候補を更新"
+                android:id="@+id/decide_button"
+                android:onClick="onClickDecideButton"
+                android:layout_gravity="center_horizontal|bottom"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="調べたいときはこちら"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:text="WEBで調べる"
+                android:textSize="40sp"
+                android:id="@+id/webbutton"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendarView"
+            android:layout_gravity="left|bottom" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
